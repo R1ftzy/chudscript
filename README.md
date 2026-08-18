@@ -63,91 +63,7 @@ Eventually, even basic C++ syntax becomes an archaeological excavation.
 
 ## How The Algorithm Works
 
-The actual algorithm uses **binary search**.
-
-For a sorted array, as long as:
-
-```text
-arr[i] == i + 1
-```
-
-the array has no missing positive number up to that position.
-
-Once this condition stops being true, the smallest missing positive number is at that boundary.
-
-Instead of checking every element, the program repeatedly cuts the search range in half.
-
-### Example
-
-```text
-Array:
-
-1 2 3 4 6 7
-        ^
-        missing 5
-```
-
-The binary search looks for the first position where:
-
-```text
-arr[i] != i + 1
-```
-
-The answer is then the corresponding missing value.
-
-## Complexity
-
-```text
-Time:  O(log n)
-Space: O(n)
-```
-
-`O(log n)` time comes from binary search.
-
-`O(n)` space is used because the input array is stored in a `vector`.
-
-## Compilation
-
-Despite looking like an entirely new programming language, ChudLang is still just C++ underneath.
-
-Compile it normally:
-
-```bash
-g++ chudlang.cpp -o chudlang
-```
-
-Run:
-
-```bash
-./chudlang
-```
-
-On Windows:
-
-```powershell
-g++ chudlang.cpp -o chudlang.exe
-.\chudlang.exe
-```
-
-## Input Format
-
-```text
-n
-a1 a2 a3 ... an
-```
-
-Example:
-
-```text
-6
-1 2 3 4 6 7
-```
-
-Output:
-
-```text
-5
-```
+Figure it out yourself chuds
 
 ## Why?
 
@@ -169,6 +85,6 @@ There is only **chud**.
 
 ### License
 
-MIT License.
+CHUD License.
 
-But emotionally, the code belongs to the chuds.
+THE CODE BELONGS TO THE CHUDS
